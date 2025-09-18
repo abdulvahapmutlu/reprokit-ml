@@ -4,7 +4,6 @@ import os
 import sys
 import time
 from pathlib import Path
-from typing import Optional
 
 
 def _err(msg: str) -> None:
