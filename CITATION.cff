@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: ReproKit-ML
+message: If you use this software, please cite it as below.
+authors:
+  - family-names: Mutlu
+    given-names: Abdulvahap
+version: 0.1.0
+date-released: 2025-09-17
+repository-code: https://github.com/abdulvahapmutlu/reprokit-ml

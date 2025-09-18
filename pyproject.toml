@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "reprokit-ml"
+version = "0.1.0"
+description = "One-command determinism + manifest for ML projects."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Abdulvahap Mutlu" }]
+keywords = ["reproducibility", "determinism", "mlops", "manifest", "hashing"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+# ✅ PEP 621 requires dependencies to be an array of PEP 508 strings
+dependencies = [
+  "typer[all]>=0.12",
+  "pydantic>=2.7",
+  "rich>=13.7",
+  "xxhash>=3.4",
+  "platformdirs>=4.2",
+  "structlog>=24.1",
+  "pathspec>=0.12",
+  "psutil>=5.9",
+  "tomli>=2.0; python_version < \"3.11\"",
+]
+
+[project.urls]
+Homepage = "https://github.com/abdulvahapmutlu/reprokit-ml"
+Issues = "https://github.com/abdulvahapmutlu/reprokit-ml/issues"
+
+[project.scripts]
+reprokit = "reprokit.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/reprokit"]
