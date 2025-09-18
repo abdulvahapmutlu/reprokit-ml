@@ -1,0 +1,18 @@
+DEFAULT_PRECOMMIT = """repos:
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.6.9
+  hooks: [{id: ruff}, {id: ruff-format}]
+- repo: https://github.com/pre-commit/mirrors-mypy
+  rev: v1.11.2
+  hooks: [{id: mypy}]
+- repo: local
+  hooks:
+    - id: reprokit-guard-seed
+      name: reprokit-guard-seed
+      entry: python -m reprokit.hooks.guard_seed
+      language: system
+    - id: reprokit-check-manifest
+      name: reprokit-check-manifest
+      entry: python -m reprokit.hooks.check_manifest
+      language: system
+"""
