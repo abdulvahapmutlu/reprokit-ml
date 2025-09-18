@@ -45,7 +45,7 @@ def main() -> None:
 
     if age_seconds > max_age_seconds:
         _err(
-            f"Manifest is stale: {path} (age={age_seconds/3600:.1f}h > {max_age_hours:.1f}h). "
+            f"Manifest is stale: {path} (age={age_seconds / 3600:.1f}h > {max_age_hours:.1f}h). "
             f"Regenerate with: reprokit manifest --config <your-config>"
         )
         sys.exit(2)
