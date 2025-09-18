@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+.env/
+dist/
+build/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# ReproKit caches
+.repro/hash-cache.sqlite
+
+# Optional: ignore generated artifacts if you don’t want to commit them
+# (You CAN commit these for provenance if desired.)
+# repro/environment/
+# repro/data_hash.json
+# repro/manifest.json
