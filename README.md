@@ -2,7 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/reprokit-ml.svg)](https://pypi.org/project/reprokit-ml/)
 ![Python versions](https://img.shields.io/pypi/pyversions/reprokit-ml.svg)
-[![CI](https://github.com/USERNAME/reprokit-ml/actions/workflows/ci.yml/badge.svg)](https://github.com/USERNAME/reprokit-ml/actions/workflows/ci.yml)
+[![CI](https://github.com/abdulvahapmutlu/reprokit-ml/actions/workflows/ci.yml/badge.svg)](https://github.com/abdulvahapmutlu/reprokit-ml/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **One-command determinism + manifest for ML projects.**
